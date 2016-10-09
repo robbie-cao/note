@@ -2,7 +2,11 @@
 
 ## Kernel logging
 
+Kernel logging ecosystem and major components
+
 ![](http://www.ibm.com/developerworks/library/l-kernel-logging-apis/figure1.gif)
+
+Kernel logging stack identifying the major components
 
 ![](http://www.ibm.com/developerworks/library/l-kernel-logging-apis/figure2.gif)
 
