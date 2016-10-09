@@ -1,5 +1,17 @@
 # Logging
 
+## Kernel logging
+
+![](http://www.ibm.com/developerworks/library/l-kernel-logging-apis/figure1.gif)
+
+![](http://www.ibm.com/developerworks/library/l-kernel-logging-apis/figure2.gif)
+
+> http://www.ibm.com/developerworks/library/l-kernel-logging-apis/
+
+> http://elinux.org/Debugging_by_printing
+
+> http://lxr.free-electrons.com/source/include/linux/printk.h?v=3.3
+
 ## Syslog
 
 In computing, `syslog` is a standard for message logging. It permits separation of the software that generates messages, the system that stores them, and the software that reports and analyzes them. Each message is labeled with a facility code, indicating the software type generating the message, and assigned a severity label.
