@@ -23,3 +23,10 @@
 - CQRS
 
 > http://www.dossier-andreas.net/software_architecture/
+
+
+## Reference
+
+- https://msdn.microsoft.com/en-us/library/dn568099.aspx
+- http://www.dossier-andreas.net/software_architecture/
+- http://www.slideshare.net/kronat/3-architetture-software-architectural-styles
