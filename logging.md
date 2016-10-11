@@ -72,3 +72,19 @@ TRACE	| Most detailed information. Expect these to be written to logs only. Sinc
 > http://logging.apache.org/log4j/2.x/manual/architecture.html
 
 > https://en.wikipedia.org/wiki/Log4j
+
+## Windows Event Tracing
+
+> https://msdn.microsoft.com/en-us/library/aa964766(v=VS.85).aspx
+
+![](https://blogs.endjin.com/wp-content/uploads/2014/04/etw-architecture_thumb.gif)
+
+> https://blogs.endjin.com/2014/04/getting-started-with-semantic-logging/
+
+![](http://cdn.ttgtmedia.com/rms/misc/event_tracing_fig1.JPG)
+
+> http://searchwindowsserver.techtarget.com/tip/Event-Tracing-for-Windows-A-fresh-look-at-an-old-tool
+
+![](http://windowsitpro.com/content/content/40707/figure_01.gif)
+
+> http://windowsitpro.com/systems-management/inside-event-tracing-windows
