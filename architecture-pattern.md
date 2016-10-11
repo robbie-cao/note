@@ -54,6 +54,8 @@ Structure | Component-Based, Object-Oriented, Layered Architecture
 
 ## Message Bus
 
+Message bus architecture describes the principle of using a software system that can receive and send messages using one or more communication channels, so that applications can interact without needing to know specific details about each other. It is a style for designing applications where interaction between applications is accomplished by passing messages (usually asynchronously) over a common bus.
+
 Connect all applications through a logical component known as a message bus. A message bus specializes in transporting messages between applications. A message bus contains three key elements:
 
 - A set of agreed-upon message schemas
@@ -78,6 +80,8 @@ There are three types of Publish/Subscribe implementations:
 
 ## Reference
 
+- https://en.wikipedia.org/wiki/Architectural_pattern
+- https://en.wikipedia.org/wiki/List_of_software_architecture_styles_and_patterns
 - https://msdn.microsoft.com/en-us/library/ee658117.aspx
 - https://msdn.microsoft.com/en-us/library/dn568099.aspx
 - http://www.dossier-andreas.net/software_architecture/
