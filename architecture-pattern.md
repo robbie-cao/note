@@ -1,6 +1,6 @@
 # Architectural Patterns ans Styles
 
-## Architectural patterns
+## Architectural Patterns
 
 - Model-View-Controller
 - Presentation-Abstraction-Control
@@ -26,7 +26,7 @@
 
 > http://www.dossier-andreas.net/software_architecture/
 
-## Architectural styles
+## Architectural Styles
 
 An architectural style, sometimes called an architectural pattern, is a set of principles—a coarse grained pattern that provides an abstract framework for a family of systems. An architectural style improves partitioning and promotes design reuse by providing solutions to frequently recurring problems. You can think of architecture styles and patterns as sets of principles that shape an application.
 
@@ -51,6 +51,30 @@ Domain | Domain Driven Design
 Structure | Component-Based, Object-Oriented, Layered Architecture
 
 > https://msdn.microsoft.com/en-us/library/ee658117.aspx
+
+## Message Bus
+
+Connect all applications through a logical component known as a message bus. A message bus specializes in transporting messages between applications. A message bus contains three key elements:
+
+- A set of agreed-upon message schemas
+- A set of common command messages [Hohpe04]
+- A shared infrastructure for sending bus messages to recipients
+
+When you use a message bus, an application that sends a message no longer has individual connections to all the applications that must receive the message. Instead, the application merely passes the message to the message bus, and the message bus transports the message to all the other applications that are listening for bus messages through a shared infrastructure. Likewise, an application that receives a message no longer obtains it directly from the sender. Instead, it takes the message from the message bus. In effect, the message bus reduces the fan-out of each application from many to one.
+
+![](https://i-msdn.sec.s-msft.com/dynimg/IC136906.gif)
+
+The shared infrastructure between a message bus and the listening applications can be achieved by using a ***Message Router*** [Hohpe04] or by using a ***Publish/Subscribe*** mechanism.
+
+There are three types of Publish/Subscribe implementations:
+
+- List-Based Publish/Subscribe
+- Broadcast-Based Publish/Subscribe
+- Content-Based Publish/Subscribe.
+
+![](https://i-msdn.sec.s-msft.com/dynimg/IC97398.gif)
+
+> https://msdn.microsoft.com/en-us/library/ff647328.aspx
 
 ## Reference
 
