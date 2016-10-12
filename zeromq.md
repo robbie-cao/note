@@ -9,18 +9,36 @@ The basic ZeroMQ patterns are:
 - Request–reply
 
   Connects a set of clients to a set of services. This is a remote procedure call and task distribution pattern.
+  
+  ![](https://github.com/imatix/zguide/raw/master/images/fig2.png)
 
 - Publish–subscribe
 
   Connects a set of publishers to a set of subscribers. This is a data distribution pattern.
+  
+  ![](https://github.com/imatix/zguide/raw/master/images/fig4.png)
 
 - Push–pull (pipeline)
 
   Connects nodes in a fan-out / fan-in pattern that can have multiple steps, and loops. This is a parallel task distribution and collection pattern.
+  
+  ![](https://github.com/imatix/zguide/raw/master/images/fig5.png)
 
 - Exclusive pair
 
   Connects two sockets in an exclusive pair. (This is an advanced low-level pattern for specific use cases.)
+
+## Architecture
+
+![](http://blog.chinaunix.net/attachment/201303/31/22312037_1364724942uQqB.png?_=3357594)
+
+> http://www.cnblogs.com/rainbowzc/p/3357594.html
+
+## Process
+
+![](http://blog.chinaunix.net/attachment/201303/31/22312037_1364725157VphV.png?_=3357594)
+
+> http://www.cnblogs.com/rainbowzc/p/3357594.html
 
 ## Reference
 
