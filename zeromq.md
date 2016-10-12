@@ -34,9 +34,19 @@ The basic ZeroMQ patterns are:
 
 > http://www.cnblogs.com/rainbowzc/p/3357594.html
 
+![](http://www.aosabook.org/images/zeromq/aosa9.png)
+
+> http://www.aosabook.org/en/zeromq.html
+
 ## Process
 
 ![](http://blog.chinaunix.net/attachment/201303/31/22312037_1364725157VphV.png?_=3357594)
+
+> http://www.cnblogs.com/rainbowzc/p/3357594.html
+
+## Comparison
+
+![](http://blog.chinaunix.net/attachment/201303/31/22312037_1364725293Ce0Y.png?_=3357594)
 
 > http://www.cnblogs.com/rainbowzc/p/3357594.html
 
