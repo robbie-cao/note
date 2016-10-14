@@ -50,6 +50,26 @@ The basic ZeroMQ patterns are:
 
 > http://www.cnblogs.com/rainbowzc/p/3357594.html
 
+## Language Binding
+
+### C
+
+![](https://github.com/zeromq/czmq/raw/master/images/README_1.png)
+
+> https://github.com/zeromq/czmq
+
+> http://api.zeromq.org/czmq3-0:czmq
+
+### Others
+
+- Go - https://github.com/zeromq/goczmq - Go
+- Ruby - https://github.com/methodmissing/rbczmq - Ruby
+- Python - https://github.com/zeromq/pyczmq - Python
+- D - https://github.com/1100110/CZMQ - D bindings
+- Common Lisp - https://github.com/lhope/cl-czmq - Common Lisp
+- Ocaml - https://github.com/fmp88/ocaml-czmq - Ocaml
+- Erlang - https://github.com/gar1t/erlang-czmq - Erlang
+
 ## Reference
 
 - http://zeromq.org
