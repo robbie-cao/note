@@ -2,6 +2,8 @@
 
 ## Architectural Patterns
 
+### General
+
 An architectural pattern is a general, reusable solution to a commonly occurring problem in software architecture within a given context. Architectural patterns are similar to software design pattern but have a broader scope.
 
 - Model-View-Controller
@@ -27,6 +29,30 @@ An architectural pattern is a general, reusable solution to a commonly occurring
 - CQRS
 
 > http://www.dossier-andreas.net/software_architecture/
+
+### Layered Architecture
+
+![](https://d3ansictanv2wj.cloudfront.net/sapr_0101-df339e516c077c33fae16623c8ec80c1.png)
+
+### Event-Driven Architecture
+
+![](http://s.radar.oreilly.com/wp-files/2/2015/02/sapr_0201.jpg)
+
+The topology is illustrated below, there is no central event-mediator component controlling and orchestrating the initial event; rather, each event-processor component is responsible for processing an event and publishing a new event indicating the action it just performed.
+
+![](http://s.radar.oreilly.com/wp-files/2/2015/02/sapr_0203.jpg)
+
+### Microkernel Architecture
+
+![](http://pafel.net/wp-content/uploads/2015/10/Screen-Shot-2015-10-13-at-10.57.08-AM.png)
+
+### Microservice Architecture
+
+![](https://www.safaribooksonline.com/library/view/software-architecture-patterns/9781491971437/assets/sapr_0401.png)
+
+> http://www.oreilly.com/programming/free/files/software-architecture-patterns.pdf
+
+> https://github.com/ruanyf/articles/blob/master/2016/2016-09-02-software-architecture.md
 
 ## Architectural Styles
 
