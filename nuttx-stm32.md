@@ -81,3 +81,5 @@ make
 - http://nuttx.org
 - https://en.wikipedia.org/wiki/NuttX
 - https://bitbucket.org/account/user/nuttx/projects/PROJ
+- https://github.com/Samsung/iotjs/wiki/Build-for-NuttX
+- https://github.com/Samsung/iotjs/blob/master/targets/nuttx-stm32f4/README.md
