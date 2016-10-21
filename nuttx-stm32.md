@@ -52,6 +52,30 @@ make
 
 > http://nuttx.org/doku.php?id=wiki:howtos:stm32f4discovery_unix
 
+### Build with `buildroot`
+
+```
+mkdir nuttx-git
+cd nuttx-git
+git clone https://bitbucket.org/nuttx/nuttx.git nuttx
+git clone https://bitbucket.org/nuttx/apps.git apps
+git clone https://bitbucket.org/nuttx/buildroot.git buildroot
+
+# config nuttx build target
+cd nuttx/tools
+./configure.sh stm32f4discovery/usbnsh # nsh console/usb - need microUSB to USB cable
+# -or-
+./configure.sh stm32f4discovery/nsh    # nsh console/UART2 - need UART-TTL to USB cable eg FTDI
+cd ../..
+
+cd buildroot
+make menuconfig
+# set $(NUTTX_DIR) to "$(TOPDIR)/../nuttx" (default "$(TOPDIR)/../../nuttx")
+make
+```
+
+> https://bitbucket.org/nuttx/buildroot
+
 ## Reference
 
 - http://nuttx.org
