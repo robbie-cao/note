@@ -18,6 +18,8 @@
   git clone git@bitbucket.org:nuttx/tools.git
   cd tools/kconfig-frontends
   ./configure --enable-mconf
+  -or-
+  ./configure --disable-shared --enable-static --enable-mconf
   make
   make install
   ```
