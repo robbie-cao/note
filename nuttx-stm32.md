@@ -45,10 +45,10 @@ cd nuttx/tools
 
 # and return to the nuttx directory
 cd ..
-```
 
 make menuconfig
 make
+```
 
 > http://nuttx.org/doku.php?id=wiki:howtos:stm32f4discovery_unix
 
