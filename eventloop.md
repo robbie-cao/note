@@ -16,9 +16,9 @@ The event loop almost always operates asynchronously with the message originator
 
 ![](https://scr.sad.supinfo.com/articles/resources/164862/2204/1.png)
 
-## libevent
+## `libevent`
 
-## libev
+## `libev`
 
 A full-featured and high-performance event loop that is loosely modelled after `libevent`, but without its limitations and bugs.
 
@@ -103,7 +103,38 @@ main (void)
 }
 ```
 
-## libuv
+## `libuv`
+
+A multi-platform support library with a focus on asynchronous I/O.
+
+![](http://docs.libuv.org/en/v1.x/_images/architecture.png)
+
+It was primarily developed for use by [Node.js](http://nodejs.org/), but it's also used by Mozilla's [Rust language](http://www.rust-lang.org/), [Luvit](http://luvit.io/), [Julia](http://julialang.org/), [pyuv](https://crate.io/packages/pyuv/), and others.
+
+![](https://pbs.twimg.com/media/Bt5ywJrIEAAKJQt.jpg)
+
+Features:
+
+- Full-featured event loop backed by epoll, kqueue, IOCP, event ports.
+- Asynchronous TCP and UDP sockets
+- Asynchronous DNS resolution
+- Asynchronous file and file system operations
+- File system events
+- ANSI escape code controlled TTY
+- IPC with socket sharing, using Unix domain sockets or named pipes (Windows)
+- Child processes
+- Thread pool
+- Signal handling
+- High resolution clock
+- Threading and synchronization primitives
+
+`libuv` (https://github.com/joyent/libuv) is a lightweight library which allows asynchronous IO across OpenBSD, Linux, Darwin, Windows etc by utilizing the fastest implementation on each system (`epoll`, `kqueue`, IOCP, event ports). These specialized IO polling methods are much faster on their respective platforms than just using `select()` like the RTS currently does.
+
+Additionally, it also provides cross platform threads, mutex, condition vars, terminal input/output and term settings w/ cross platform ANSI escape code handling, thread pools, cross platform HRC's etc. It's currently significantly faster than `libevent` and slightly faster than `libev`. Because it's maintained and utilized heavily by **Node.js** it's in extremely active and maintained development.
+
+> https://github.com/facebook/hhvm/issues/2047
+
+> http://nikhilm.github.io/uvbook/
 
 ## GLib Event Loop
 
@@ -154,5 +185,6 @@ int main()
 ## Reference
 
 - https://en.wikipedia.org/wiki/Event_loop
+- http://docs.libuv.org/en/v1.x/
 - http://software.schmorp.de/pkg/libev.html
 - http://pod.tst.eu/http://cvs.schmorp.de/libev/ev.pod
