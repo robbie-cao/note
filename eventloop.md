@@ -18,6 +18,49 @@ The event loop almost always operates asynchronously with the message originator
 
 ## `libevent`
 
+A software library that provides asynchronous event notification.
+
+![](http://www.cppblog.com/images/cppblog_com/xguru/libevent1.jpg)
+
+The `libevent` API provides a mechanism to execute a callback function when a specific event occurs on a file descriptor or after a timeout has been reached. `libevent` also supports callbacks triggered by signals and regular timeouts.
+
+Programs using `libevent`:
+<ul>
+<li><a href="http://www.chromium.org/Home">Chromium</a> &ndash; Google's open-source web browser (uses Libevent on Mac and Linux)</li>
+<li><a href="http://www.memcached.org">Memcached</a> &ndash; a high-performance, distributed memory object caching system</li>
+<li><a href="http://www.transmissionbt.com/">Transmission</a> &ndash; a fast, easy, and free BitTorrent client</li>
+<li><a href="http://www.ntp.org">NTP</a> &ndash; the network time protocol that makes your clock right (uses Libevent in SNTP)</li>
+<li><a href="http://tmux.sourceforge.net">tmux</a> &ndash; A clean, modern, BSD-licensed terminal multiplexer, similar to GNU screen</li>
+<li><a href="https://www.torproject.org/">Tor</a> &ndash; an anonymous Internet communication system.</li>
+<li><a href="https://github.com/ellzey/libevhtp">libevhtp</a> &ndash; A fast and flexible replacement for libevent's httpd API</li>
+<li><a href="http://prosody.im/">Prosody</a> &ndash; A Jabber/XMPP server written in Lua</li>
+<li><a href="http://wiki.postgresql.org/wiki/PgBouncer">PgBouncer</a> &ndash; Lightweight connection pooler for PostgreSQL</li>
+<li><a href="http://darkk.net.ru/redsocks/">redsocks</a> &ndash; a simple transparent TCP -> Socks5/HTTPS proxy daemon.</li>
+<li><a href="http://monkey.org/~provos/vomit/">Vomit</a> &ndash; Voice Over Misconfigured Internet Telephones</li>
+<li><a href="http://monkey.org/~provos/crawl/">Crawl</a> &ndash; A Small and Efficient HTTP Crawler</li>
+<li><a href="http://monkey.org/~provos/libio/">Libio</a> &ndash; an input/output abstraction library</li>
+<li><a href="http://www.honeyd.org/">Honeyd</a> &ndash; a virtual honeynet daemon &ndash; can be used to <a href="http://www.honeyd.org/worms.php">fight Internet worms</a>.</li>
+<li><a href="http://www.monkey.org/~dugsong/fragroute/">Fragroute</a> &ndash; an IDS testing tool</li>
+<li><a href="http://monkey.org/~marius/nylon/">Nylon</a> &ndash; nested proxy server</li>
+<li><a href="http://monkey.org/~provos/disconcert/">Disconcert</a> &ndash; a Distributed Computing Framework for Loosely-Coupled Workstations.</li>
+<li><a href="http://monkey.org/~marius/trickle/">Trickle</a> &ndash; a lightweight userspace bandwidth shaper.</li>
+<li><a href="http://oss.digirati.com.br/watchcatd/">watchcatd</a> &ndash;software watchdog designed to take actions not as drastic as the usual solutions, which reset the machine.</li>
+<li><a href="http://monkey.org/~provos/scanssh/">ScanSSH</a> &ndash; a fast SSH server and open proxy scanner.</li>
+<li><a href="http://www.honeyd.org/tools.php#nttlscan">Nttlscan</a> &ndash; a network topology scanner for Honeyd.</li>
+<li><a href="http://nch.sourceforge.net/">NetChat</a> &ndash; a combination of netcat and ppp's chat.</li>
+<li><a href="http://www.iolanguage.com/">Io</a> &ndash; a small programming language; uses libevent for network communication.</li>
+<li><a href="http://www.systrace.org/">Systrace</a> &ndash; a system call sandbox.</li>
+<li><a href="http://www.spybye.org/">SpyBye</a> &ndash; detect malware on web pages.</li>
+<li><a href="http://www.greensql.net/">GreenSQL</a> &ndash; an SQL database firewall.</li>
+<li><a href="http://monkey.org/~provos/dnsscan/">dnsscan</a> &ndash;  a fast scanner for identifying open recursive dns resolvers</li>
+<li><a href="http://code.google.com/p/kargo-event/">Kargo Event</a> &ndash; a PHP extension for libevent.</li>
+<li><a href="http://maximelabelle.bitbucket.org/">Scytale</a> &ndash; a database encryption tool.</li>
+</ul>
+
+> http://libevent.org
+
+![](http://my.csdn.net/uploads/201205/25/1337938985_6431.jpg)
+
 ## `libev`
 
 A full-featured and high-performance event loop that is loosely modelled after `libevent`, but without its limitations and bugs.
@@ -109,7 +152,7 @@ A multi-platform support library with a focus on asynchronous I/O.
 
 ![](http://docs.libuv.org/en/v1.x/_images/architecture.png)
 
-It was primarily developed for use by [Node.js](http://nodejs.org/), but it's also used by Mozilla's [Rust language](http://www.rust-lang.org/), [Luvit](http://luvit.io/), [Julia](http://julialang.org/), [pyuv](https://crate.io/packages/pyuv/), and others.
+It was primarily developed for use by [Node.js](http://nodejs.org/), but it's also used by Mozilla's [Rust language](http://www.rust-lang.org/), [Luvit](http://luvit.io/), [Julia](http://julialang.org/), [pyuv](https://crate.io/packages/pyuv/), and [others](https://github.com/libuv/libuv/wiki/Projects-that-use-libuv).
 
 ![](https://pbs.twimg.com/media/Bt5ywJrIEAAKJQt.jpg)
 
@@ -189,6 +232,9 @@ int main()
 ## Reference
 
 - https://en.wikipedia.org/wiki/Event_loop
+- http://libevent.org
+- http://www.wangafu.net/~nickm/libevent-book/
+- http://libuv.org
 - http://docs.libuv.org/en/v1.x/
 - http://software.schmorp.de/pkg/libev.html
 - http://pod.tst.eu/http://cvs.schmorp.de/libev/ev.pod
