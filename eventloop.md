@@ -180,7 +180,11 @@ int main()
 
 > https://developer.gnome.org/glib/stable/glib-The-Main-Event-Loop.html
 
+## Qt Event Loop
 
+## Boost ASIO
+
+> http://www.slideshare.net/lukejfluo/phase1-45781850
 
 ## Reference
 
