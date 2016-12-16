@@ -172,6 +172,30 @@ Double buffering:
 
 ![](http://maxim.int.ru/bookshelf/PthreadsProgram/img/02FIG05_0.gif)
 
+> http://maxim.int.ru/bookshelf/PthreadsProgram/htm/r_20.html
+
+## Synchronizing Pthreads
+
+You can choose from among many Pthreads functions to obtain some type of synchronization:
+
+- `pthread_join` function
+
+  `pthread_join` allows one thread to suspend execution until another has terminated.
+
+- Mutex variable functions
+
+  A mutex variable acts as a mutually exclusive lock, allowing threads to control access to data. The threads agree that only one thread at a time can hold the lock and access the data it protects.
+
+- Condition variable functions
+
+  A condition variable provides a way of naming an event in which threads have a general interest. An event can be something as simple as a counter's reaching a particular value or a flag being set or cleared; it may be something more complex, involving a specific coincidence of multiple events. Threads are interested in these events, because such events signify that some condition has been met that allows them to proceed with some particular phase of their execution. The Pthreads library provides ways for threads both to express their interest in a condition and to signal that an awaited condition has been met.
+
+- `pthread_once` function
+
+  `pthread_once` is a specialized synchronization tool that ensures that initialization routines get executed once and only once when called by multiple threads.
+
+> http://maxim.int.ru/bookshelf/PthreadsProgram/htm/r_26.html
+
 ## Reference
 
 - http://maxim.int.ru/bookshelf/PthreadsProgram/toc.html
