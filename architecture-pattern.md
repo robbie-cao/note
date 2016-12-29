@@ -1,4 +1,4 @@
-# Architectural Patterns ans Styles
+# Architectural Patterns and Styles
 
 ## Architectural Patterns
 
