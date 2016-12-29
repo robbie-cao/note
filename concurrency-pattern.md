@@ -1,5 +1,7 @@
 # Concurrency Pattern
 
+## Overview
+
 **Concurrency patterns** are those types of **design patterns** that deal with the multi-threaded programming paradigm.
 
 Examples of this class of patterns include:
@@ -46,6 +48,22 @@ The final pattern offers a different strategy for addressing certain inherent co
 Implementations of all patterns above can use the *Synchronization* patterns protect critical regions from concurrent access.
 
 > https://www.dre.vanderbilt.edu/~schmidt/POSA/POSA2/conc-patterns.html
+
+## Active Object
+
+![](http://www.codeguru.com/images/article/18981/Classes.gif)
+
+> http://www.cs.wustl.edu/~schmidt/PDF/Act-Obj.pdf
+
+The *Active Object* pattern decouples the method invocation from method execution. The method invocation is made on an Active Object on client thread and method execution is performed by an independent thread asynchronously without blocking the client thread. Thus, the client thread is not tied-up until the method execution is over. After a method is invoked and the command to execute it is dispatched to the Scheduler or Dispatcher, it can perform other tasks.
+
+The method is invoked on Active Object. An Active Object has a public interface called as Proxy. The Active Object creates a Message (Command pattern) which contains the information about the method call and puts it in the Message Queue. After the message is enqueued, the Scheduler or Dispatcher is notified to read the message. The Scheduler reads the message by dequeuing it from Message Queue. After the message is read, the Scheduler creates one or multiple threads called Servant for each method execution. The message sent by Scheduler is interpreted and executed by the Servant. The method may return a result as a Future implementation to the client.
+
+![](https://madhuraoakblog.files.wordpress.com/2014/05/4.jpg)
+
+> https://madhuraoakblog.wordpress.com/2014/05/10/active-object-pattern/
+
+![](https://marcdrossaers.files.wordpress.com/2013/10/image002.png)
 
 ## Reference
 
