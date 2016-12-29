@@ -79,18 +79,45 @@ It is a concurrent pattern which allow the synchronous and asynchronous processi
 
 In order to do this, the services in the system is decomposed into two layers: synchronous layer and asynchronous layer.
 
-The synchronous service layer does high level processing(by using threads/processes).
-
-The asynchronous service layer does low level processing. Here the layer can't block.
-
-There is a queuing layer that provides the mechanism for communicating between services between synchronous and asynchronous layer.
-
-There is an external event source that generates interrupts for asynchronous layer.
+- The synchronous service layer does high level processing(by using threads/processes).
+- The asynchronous service layer does low level processing. Here the layer can't block.
+- There is a queuing layer that provides the mechanism for communicating between services between synchronous and asynchronous layer.
+- There is an external event source that generates interrupts for asynchronous layer.
 
 ![](https://qph.ec.quoracdn.net/main-qimg-ea27612ef33e3c2c3386d35050b0bf07?convert_to_webp=true)
 
 > https://www.quora.com/Concurrency-computer-science-What-is-the-half-sync-half-async-software-pattern
 
+## Leader / Follower
+
+![](https://www.tele-task.de/media/podcast_images/MWDS_WS09/MWDS_2010_01_28_part_5_screenshot1.png)
+
+![](http://wiki.ifs.hsr.ch/APF/files/Leader_Followers_Struktur.JPG)
+
+![](http://cfile29.uf.tistory.com/image/131F77354F59AEFC0DA24A)
+
+![](http://www.fmc-modeling.org/category/projects/apache/amp/images/05-Apache_Internals/leader-followers_BD.gif)
+
+> http://kircher-schwanninger.de/michael/publications/lf.pdf
+
+The pattern consists of 4 components:
+
+- ThreadPool
+- HandleSet
+- Handle
+- ConcreteEventHandler (implements the EventHandler interface).
+
+You can think of it as a taxi station at night, where all the drivers are sleeping except for one, the leader. The ThreadPool is a station managing many threads - cabs.
+
+The leader is waiting for an IO event on the HandleSet, like how a driver waits for a client.
+
+When a client arrives (in the form of a Handle identifying the IO event), the leader driver wakes up another driver to be the next leader and serves the request from his passenger.
+
+While he is taking the client to the given address (calling ConcreteEventHandler and handing over Handle to it) the next leader can concurrently serve another passenger.
+
+When a driver finishes he take his taxi back to the station and falls asleep if the station is not empty. Otherwise he become the leader.
+
+> http://stackoverflow.com/questions/3058272/explain-leader-follower-pattern
 
 ## Reference
 
