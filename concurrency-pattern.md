@@ -71,7 +71,9 @@ The method is invoked on Active Object. An Active Object has a public interface 
 
 > http://www.cs.wustl.edu/~schmidt/PDF/PLoP-95.pdf
 
-![](http://images.slideplayer.com/23/6898057/slides/slide_18.jpg)
+![](images/half_sync_half_async.jpg)
+
+> http://slideplayer.com/slide/6898057/
 
 It is a concurrent pattern which allow the synchronous and asynchronous processing services to communicate without complicating their programming model and degrading their performance.
 
