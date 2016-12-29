@@ -65,6 +65,33 @@ The method is invoked on Active Object. An Active Object has a public interface 
 
 ![](https://marcdrossaers.files.wordpress.com/2013/10/image002.png)
 
+## Half Sync / Half Async
+
+![](http://pds8.egloos.com/pds/200803/29/14/d0043314_47edac9ab597e.jpg)
+
+> http://www.cs.wustl.edu/~schmidt/PDF/PLoP-95.pdf
+
+![](http://images.slideplayer.com/23/6898057/slides/slide_18.jpg)
+
+It is a concurrent pattern which allow the synchronous and asynchronous processing services to communicate without complicating their programming model and degrading their performance.
+
+![](https://qph.ec.quoracdn.net/main-qimg-927d02276298b5dca9e72884a12082da?convert_to_webp=true)
+
+In order to do this, the services in the system is decomposed into two layers: synchronous layer and asynchronous layer.
+
+The synchronous service layer does high level processing(by using threads/processes).
+
+The asynchronous service layer does low level processing. Here the layer can't block.
+
+There is a queuing layer that provides the mechanism for communicating between services between synchronous and asynchronous layer.
+
+There is an external event source that generates interrupts for asynchronous layer.
+
+![](https://qph.ec.quoracdn.net/main-qimg-ea27612ef33e3c2c3386d35050b0bf07?convert_to_webp=true)
+
+> https://www.quora.com/Concurrency-computer-science-What-is-the-half-sync-half-async-software-pattern
+
+
 ## Reference
 
 - https://en.wikipedia.org/wiki/Concurrency_pattern
