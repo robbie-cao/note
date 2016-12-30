@@ -1,11 +1,15 @@
-# Porting `ubus` to Ubuntu
+# Using `libubox`, `ubus` and `uci` on Ubuntu
 
 ## `libubox`
 
 ```
 $ git clone git://git.openwrt.org/project/libubox.git
 $ cd libubox
+
+$ cmake .
+-or-
 $ cmake -f CMakeLists.txt
+
 $ make
 $ sudo make install
 ```
@@ -14,11 +18,24 @@ $ sudo make install
 
 ```
 $ git clone git://git.openwrt.org/project/ubus.git
-$ cd libubox
+$ cd ubus
 $ cmake -f CMakeLists.txt
 $ make
 $ sudo make install
 ```
+
+## `uci`
+
+```
+$ git clone git://git.openwrt.org/project/uci.git
+$ cd uci
+$ cmake .
+$ make
+$ sudo make install
+$ sudo ldconfig
+```
+
+> https://wiki.openwrt.org/doc/techref/uci
 
 ## Sample Code
 
