@@ -202,7 +202,7 @@ $ sudo ./ubus-sample
 
 # in another shell
 $ sudo ubus call sample status
-$ sudo ubus call add `{"value" : 1234}'
+$ sudo ubus call add '{"value" : 1234}'
 ```
 
 ## Reference
