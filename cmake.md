@@ -6,6 +6,10 @@
 
 ![CMake Process](https://www.researchgate.net/profile/Sami_Sakly/publication/283684306/figure/fig17/AS:294584514691081@1447245829919/Figure-41-Cmake-building-process.png)
 
+An example file structure for a general project building with CMake:
+
+![](images/cmake-file-structure.png)
+
 ## Features
 
 - Manage complex, large build environments
