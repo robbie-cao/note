@@ -225,7 +225,11 @@ int main()
 
 ## Qt Event Loop
 
-## Boost ASIO
+## Boost.Asio
+
+Boost.Asio is a cross-platform C++ library for network and low-level I/O programming that provides developers with a consistent asynchronous model using a modern C++ approach.
+
+> http://www.boost.org/doc/libs/1_51_0/doc/html/boost_asio.html
 
 > http://www.slideshare.net/lukejfluo/phase1-45781850
 
@@ -265,6 +269,46 @@ int main()
 
 > http://blog.chinaunix.net/uid-28458801-id-4463981.html
 
+## `libuv` vs Boost.Asio
+
+```
+                         libuv          Boost
+Event Loop:              yes            Asio
+Thread Pool:             yes            Asio + Threads
+Threading:
+  Threads:               yes            Threads
+  Synchronization:       yes            Threads
+File System Operations:
+  Synchronous:           yes            FileSystem
+  Asynchronous:          yes            Asio + Filesystem
+Timers:                  yes            Asio
+Scatter/Gather I/O:      no             Asio
+Networking:
+  ICMP:                  no             Asio
+  DNS Resolution:        async-only     Asio
+  SSL:                   no             Asio
+  TCP:                   async-only     Asio
+  UDP:                   async-only     Asio
+Signal:
+  Handling:              yes            Asio
+  Sending:               yes            no
+IPC:
+  UNIX Domain Sockets:   yes            Asio
+  Windows Named Pipe:    yes            Asio
+Process Management:
+  Detaching:             yes            Process
+  I/O Pipe:              yes            Process
+  Spawning:              yes            Process
+System Queries:
+  CPU:                   yes            no
+  Network Interface:     yes            no
+Serial Ports:            no             yes
+TTY:                     yes            no
+Shared Library Loading:  yes            Extension
+```
+
+More details: http://stackoverflow.com/questions/11423426/how-does-libuv-compare-to-boost-asio/13220533
+
 ## Reference
 
 - https://en.wikipedia.org/wiki/Event_loop
@@ -274,3 +318,4 @@ int main()
 - http://docs.libuv.org/en/v1.x/
 - http://software.schmorp.de/pkg/libev.html
 - http://pod.tst.eu/http://cvs.schmorp.de/libev/ev.pod
+- http://stackoverflow.com/questions/11423426/how-does-libuv-compare-to-boost-asio/13220533
