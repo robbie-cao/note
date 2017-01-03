@@ -233,6 +233,20 @@ Boost.Asio is a cross-platform C++ library for network and low-level I/O program
 
 > http://www.slideshare.net/lukejfluo/phase1-45781850
 
+## `libev` vs `libevent`
+
+As for design philosophy, `libev` was created to improve on some of the architectural decisions in `libevent`, for example, global variable usage made it hard to use `libevent` safely in multithreaded environments, watcher structures are big because they combine I/O, time and signal handlers in one, the extra components such as the http and dns servers suffered from bad implementation quality and resultant security issues, and timers were inexact and didn't cope well with time jumps.
+
+`Libev` tried to improve each of these, by not using global variables but using a loop context for all functions, by using small watchers for each event type (an I/O watcher uses 56 bytes on x86_64 compared to 136 for `libevent`), allowing extra event types such as timers based on wallclock vs. monotonic time, inter-thread interruptions, prepare and check watchers to embed other event loops or to be embedded and so on.
+
+The extra component problem is "solved" by not having them at all, so `libev` can be small and efficient, but you also need to look elsewhere for an http library, because libev simply doesn't have one (for example, there is a very related library called libeio that does asynchronous I/O, which can be used independently or together with `libev`, so you can mix and match).
+
+So in short, `libev` tries to do one thing only (POSIX event library), and this in the most efficient way possible. `Libevent` tries to give you the full solution (event lib, non-blocking I/O library, http server, DNS client).
+
+Or, even shorter, `libev` tries to follow the UNIX toolbox philosophy of doing one thing only, as good as possible.
+
+> http://stackoverflow.com/questions/9433864/whats-the-difference-between-libev-and-libevent/13999821
+
 ## `libev` vs `libuv`
 
 - `libuv` 是异步的，`libev` 是同步的多路IO复用。
