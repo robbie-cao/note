@@ -12,6 +12,28 @@
 
 ## Encoder / Decoder
 
+### LAME
+
+```
+$ sudo apt-get install lame libmp3lame-dev
+```
+
+LAME is a high quality MPEG Audio Layer III (MP3) encoder licensed under the LGPL.
+
+LAME features:
+- Many improvements in quality in speed over ISO reference software. See history.
+- MPEG1,2 and 2.5 layer III encoding.
+- CBR (constant bitrate) and two types of variable bitrate, VBR and ABR.
+- Encoding engine can be compiled as a shared library (Linux/UNIX), DLL , Directshow filter or ACM codec (Windows).
+- Free format encoding and decoding.
+- GPSYCHO: a GPL'd psycho acoustic and noise shaping model.
+- Powerful and easy to use presets.
+- Quality better than all other encoders at most bitrates.
+- Fast! Encodes faster than real time on a PII 266 at highest quality mode.
+- MP3x: a GTK/X-Window MP3 frame analyzer for both .mp3 and unencoded audio files.
+
+> http://lame.sourceforge.net
+
 ### MAD (`libmad`)
 
 ```
@@ -59,27 +81,26 @@ Features include:
 
 > http://www.mpg123.de
 
-### LAME
+### `libmad` vs `mpg123`
 
-```
-$ sudo apt-get install lame libmp3lame-dev
-```
+`mpg123` had claims of being very fast, MAD claimed it was very accurate.
 
-LAME is a high quality MPEG Audio Layer III (MP3) encoder licensed under the LGPL.
+[Wesley Moore](http://www.wezm.net/about/) did a benchmark test on the performance of `libmad` and `libmpg123`, result on the post: http://www.wezm.net/technical/2008/04/mp3-decoder-libraries-compared/
 
-LAME features:
-- Many improvements in quality in speed over ISO reference software. See history.
-- MPEG1,2 and 2.5 layer III encoding.
-- CBR (constant bitrate) and two types of variable bitrate, VBR and ABR.
-- Encoding engine can be compiled as a shared library (Linux/UNIX), DLL , Directshow filter or ACM codec (Windows).
-- Free format encoding and decoding.
-- GPSYCHO: a GPL'd psycho acoustic and noise shaping model.
-- Powerful and easy to use presets.
-- Quality better than all other encoders at most bitrates.
-- Fast! Encodes faster than real time on a PII 266 at highest quality mode.
-- MP3x: a GTK/X-Window MP3 frame analyzer for both .mp3 and unencoded audio files.
+Size     | 126,083,072 bytes
+----     | -----
+Bitrate  | 224 kbps
+Channels | 2 (Joint Stereo)
+Length   | 1:15:02
 
-> http://lame.sourceforge.net
+
+Library    | Average Elapsed Time | Average Processor Time | Processor Time Std. Deviation
+---        | ---                  | ---                    | ---
+mpg123     | 37.00                | 32.21                  | 0.19
+mad        | 100.10               | 94.44                  | 0.15
+Core Audio | 84.00                | 78.34                  | 0.34
+
+> http://www.wezm.net/technical/2008/04/mp3-decoder-libraries-compared/
 
 ## Reference
 
