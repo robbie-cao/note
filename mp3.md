@@ -1,6 +1,8 @@
-# MP3 Encoder / Decoder in C
+# MP3
 
-## MAD (`libmad`)
+## Encoder / Decoder
+
+### MAD (`libmad`)
 
 ```
 $ sudo apt-get install madplay libmad0-dev
@@ -19,7 +21,7 @@ MAD has the following special features:
 
 > http://m.baert.free.fr/contrib/docs/libmad/doxy/html/index.html
 
-## `mpg123` / `libmpg123`
+### `mpg123` / `libmpg123`
 
 ```
 $ sudo apt-get install mpg123 libmpg123-dev
@@ -47,7 +49,7 @@ Features include:
 
 > http://www.mpg123.de
 
-## LAME
+### LAME
 
 ```
 $ sudo apt-get install lame libmp3lame-dev
