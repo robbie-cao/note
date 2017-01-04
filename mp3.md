@@ -1,5 +1,15 @@
 # MP3
 
+**MPEG-1 and/or MPEG-2 Audio Layer III**, more commonly referred to as **MP3**, is an audio coding format for digital audio which uses a form of lossy data compression. It is a common audio format for consumer audio streaming or storage.
+
+## File Structure
+
+![](https://upload.wikimedia.org/wikipedia/commons/0/01/Mp3filestructure.svg)
+
+> https://en.wikipedia.org/wiki/MP3
+
+> http://mpgedit.org/mpgedit/mpeg_format/mpeghdr.htm
+
 ## Encoder / Decoder
 
 ### MAD (`libmad`)
@@ -73,6 +83,7 @@ LAME features:
 
 ## Reference
 
+- https://en.wikipedia.org/wiki/MP3
 - https://en.wikipedia.org/wiki/MPEG_Audio_Decoder
 - https://en.wikipedia.org/wiki/Mpg123
 - https://en.wikipedia.org/wiki/LAME
