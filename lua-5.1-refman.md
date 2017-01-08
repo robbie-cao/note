@@ -2,6 +2,7 @@
 
 <!-- saved from url=(0054)http://www.codingnow.com/2000/download/lua_manual.html -->
 
+<!--
 <html><div class="oneNoteWebClipperIsInstalledOnThisBrowser" style="display: none;"></div><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
 <title>Lua 5.1 参考手册</title>
  
@@ -21,6 +22,7 @@
 </style></head>
 
 <body data-feedly-mini="yes">
+-->
 
 <hr>
 <h1>
@@ -7609,6 +7611,8 @@ Last change: minor edit
 
 <div id="feedly-mini" title="feedly Mini tookit"></div>
 
+<!--
 </body>
 <div></div>
 </html>
+-->
