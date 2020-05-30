@@ -72,8 +72,8 @@ sqlite> create table memos(text, priority INTEGER);
 sqlite> insert into memos values('deliver project description', 10);
 sqlite> insert into memos values('lunch with Christine', 100);
 sqlite> select * from memos;
-deliver project description|10
-lunch with Christine|100
+deliver project description | 10
+lunch with Christine        | 100
 sqlite>
 ```
 
@@ -81,7 +81,7 @@ sqlite>
 
 ```
 sqlite> .tables
-sqlite> .mode column  
+sqlite> .mode column
 sqlite> .headers on
 sqlite> .exit
 ```
