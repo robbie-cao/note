@@ -25,8 +25,8 @@ Follow steps at link: https://ssr.tools/1317
 4. One click install
 
     ```
-	$ bash <(curl -L -s https://raw.githubusercontent.com/wulabing/V2Ray_ws-tls_bash_onekey/master/install.sh) | tee v2ray_ins.log
-	```
+    $ bash <(curl -L -s https://raw.githubusercontent.com/wulabing/V2Ray_ws-tls_bash_onekey/master/install.sh) | tee v2ray_ins.log
+    ```
 
     Or
 
@@ -34,13 +34,30 @@ Follow steps at link: https://ssr.tools/1317
     wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.com/wulabing/V2Ray_ws-tls_bash_onekey/master/install.sh" && chmod +x install.sh && bash install.sh
     ```
 
-	Or
+    Or
 
-	```
-	$ git clone https://github.com/wulabing/V2Ray_ws-tls_bash_onekey v2ray_ws-tls_install
-	$ cd v2ray_ws-tls_install
+    ```
+    $ git clone https://github.com/wulabing/V2Ray_ws-tls_bash_onekey v2ray_ws-tls_install
+    $ cd v2ray_ws-tls_install
+    $ chmod a+x install.sh
     $ sudo ./install.sh
     ```
+
+    Then install bbr improvement
+
+    ```
+    $ wget --no-check-certificate https://github.com/teddysun/across/raw/master/bbr.sh && chmod +x bbr.sh && ./bbr.sh
+    ```
+
+    Or
+
+    ```
+    $ git clone https://github.com/teddysun/across
+    $ cd across
+    $ chmod a+x bbr.sh
+    $ sudo ./bbr.sh
+    ```
+
 
 5. Done
 
