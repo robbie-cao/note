@@ -1,9 +1,9 @@
-- youtube-dl
+# youtube-dl
 
-http://ytdl-org.github.io/youtube-dl/
-https://askubuntu.com/questions/486297/how-to-select-video-quality-from-youtube-dl
-https://askubuntu.com/questions/210410/how-to-run-youtube-dl-through-proxy-server
-https://unix.stackexchange.com/questions/71481/how-to-use-socks-proxy-for-commands-in-terminal-such-as-youtube-dl
+- http://ytdl-org.github.io/youtube-dl/
+- https://askubuntu.com/questions/486297/how-to-select-video-quality-from-youtube-dl
+- https://askubuntu.com/questions/210410/how-to-run-youtube-dl-through-proxy-server
+- https://unix.stackexchange.com/questions/71481/how-to-use-socks-proxy-for-commands-in-terminal-such-as-youtube-dl
 
 ```
 $ youtube-dl "youtube.com/watch?v=3XjwiV-6_CA"
@@ -51,6 +51,7 @@ $ youtube-dl --proxy "socks5://127.0.0.1/" -v 9bZkp7q19f0
 ```
 
 `--proxy` URL Use the specified HTTP/HTTPS/SOCKS proxy.
+
 To enable experimental SOCKS proxy, specify a proper scheme. For example `socks5://127.0.0.1:1080/`.
 
 

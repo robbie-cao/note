@@ -1,5 +1,6 @@
-- v2ray
+# v2ray
 
+```
 Installing V2Ray v4.23.1 on x86_64
 Downloading V2Ray: https://github.com/v2ray/v2ray-core/releases/download/v4.23.1/v2ray-linux-64.zip
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
@@ -21,4 +22,5 @@ Archive:  /tmp/v2ray/v2ray.zip
 Created symlink from /etc/systemd/system/multi-user.target.wants/v2ray.service to /etc/systemd/system/v2ray.service.
 Restarting V2Ray service.
 V2Ray v4.23.1 is installed.
+```
 
