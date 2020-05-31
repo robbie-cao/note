@@ -1,5 +1,7 @@
 # v2ray ws+tls one click setup
 
+## Steps
+
 Follow steps at link: https://ssr.tools/1317
 
 1. Apply vps server
@@ -58,6 +60,12 @@ Follow steps at link: https://ssr.tools/1317
     $ sudo ./bbr.sh
     ```
 
-
 5. Done
+
+## Misc
+
+- v2ray on gcp (Google Cloud Platform) howto: https://www.wmsoho.com/google-cloud-platform-ssr-bbr-tutorial/
+
+
+## Reference
 
