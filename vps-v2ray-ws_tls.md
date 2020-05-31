@@ -64,7 +64,12 @@ Follow steps at link: https://ssr.tools/1317
 
 ## Misc
 
-- v2ray on gcp (Google Cloud Platform) howto: https://www.wmsoho.com/google-cloud-platform-ssr-bbr-tutorial/
+- v2ray on gcp (Google Cloud Platform) howto:
+  - https://www.wmsoho.com/google-cloud-platform-ssr-bbr-tutorial/
+  - https://hackersandslackers.com/google-cloud-compute-engine/
+  - https://233v2.com/post/16/
+  - https://zelikk.blogspot.com/2019/01/gcp-v2ray-firewall.html
+  - https://medium.com/@moreless/%E8%B0%B7%E6%AD%8C%E4%BA%91%E4%B8%8A%E5%AE%89%E8%A3%85v2ray%E5%9B%BE%E6%96%87%E6%95%99%E7%A8%8B-da93650d0aa3
 
 
 ## Reference
